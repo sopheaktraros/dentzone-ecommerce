@@ -1,0 +1,614 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap);/*********************************************************************************
+*    This is a main style  for admin that we import or add all file customize.   *
+**********************************************************************************/
+
+/*============== Font ===============*/
+
+/*============= Variable ============*/
+
+/*======Variable Style Colors=====*/
+
+/*============ Default =============*/
+
+:root {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: 0.5rem;
+}
+
+body {
+  background: #f9f9f9;
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a,
+a * {
+  text-decoration: none !important;
+}
+
+p {
+  margin: 0.2rem;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+/*============ Customize Main Style ============*/
+
+/*----------Customer Background Color----------*/
+
+.bg-ecam-orange-light {
+  background: #FF5722;
+}
+
+.bg-ecam-secondary {
+  background: #2c3e50;
+}
+
+.bg-ecam-primary {
+  background: #3490dc;
+}
+
+/*----------Customer Link----------*/
+
+a {
+  color: #112233;
+}
+
+a,
+.link,
+a.link {
+  text-decoration: none;
+}
+
+/*----------Breadcrumbs----------*/
+
+.breadcrumb .breadcrumb-item {
+  color: #3F51B5;
+}
+
+/*---------- Customer Bootstrap ----------*/
+
+/**-------Form------**/
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  color: black;
+  opacity: 0.8;
+  margin-bottom: 5px;
+}
+
+.form-group .form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/*--- validate ---*/
+
+.form-group label.error {
+  margin: 0.5rem 0 0;
+  width: 100%;
+  font-size: 0.875em;
+  color: #e3342f;
+  text-align: right;
+}
+
+.was-validated .form-check-input:valid ~ .form-check-label {
+  color: inherit;
+}
+
+/**-------Button------**/
+
+button:focus,
+a.btn {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/**-------Text------**/
+
+.text-default {
+  color: #fff;
+  font-size: 15px;
+}
+
+/*------Padding------*/
+
+.padding-12 {
+  padding: 12px;
+}
+
+/*--------Card--------*/
+
+.card-body {
+  padding: 15px;
+}
+
+/*----------CRUD----------*/
+
+.ecam-crud {
+  /*------CRUD List-------*/
+}
+
+.ecam-crud .card-crud {
+  border: 1px solid white;
+}
+
+.ecam-crud:not(.list) {
+  padding-bottom: 60px;
+}
+
+.ecam-crud .crud-list .crud-header {
+  padding: 3px 16px;
+}
+
+.ecam-crud .crud-list .crud-header crud-btn-group,
+.ecam-crud .crud-list .crud-header .crud-tittle {
+  max-height: 38px;
+}
+
+.ecam-crud .crud-list .crud-header .crud-tittle {
+  font-size: 1.2rem;
+  line-height: 38px;
+  margin: 0;
+}
+
+.ecam-crud .crud-list .crud-header .crud-btn-group .btn {
+  width: 70px;
+  color: white;
+}
+
+.ecam-crud .crud-list .crud-header .btn-add {
+  background: #0275d8;
+  border: #0275d8;
+  border-top-right-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+}
+
+.ecam-crud .crud-list .crud-header .btn-filter {
+  background: #2c3e50;
+  border-color: #2c3e50;
+  border-top-left-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
+}
+
+.ecam-crud .crud-list .crud-body {
+  /*-----Datatable------*/
+}
+
+.ecam-crud .crud-list .crud-body .dataTables_processing {
+  border: none;
+  background: transparent;
+}
+
+.ecam-crud .crud-list .crud-body .table.dataTable {
+  margin: 0px !important;
+}
+
+.ecam-crud .crud-list .crud-body .table.dataTable thead th,
+.ecam-crud .crud-list .crud-body .table.dataTable thead td {
+  border: 1px solid #dddddd;
+  border-left-width: 0px !important;
+  color: #4c4949;
+  font-family: serif;
+}
+
+.ecam-crud .crud-list .crud-body .table.dataTable thead th:nth-child(1),
+.ecam-crud .crud-list .crud-body .table.dataTable thead td:nth-child(1) {
+  border-left-width: 1px !important;
+}
+
+.ecam-crud .crud-list .crud-body .table.dataTable tbody th,
+.ecam-crud .crud-list .crud-body .table.dataTable tbody td {
+  font-size: 13px;
+}
+
+.ecam-crud .crud-list .crud-body .table .btn-edit,
+.ecam-crud .crud-list .crud-body .table .btn-delete {
+  margin: 0 0.25rem;
+}
+
+.ecam-crud .crud-list .crud-body .dataTables_scroll {
+  padding-top: 12px;
+}
+
+.ecam-crud .crud-list .crud-body .dataTables_scrollBody {
+  border-bottom: 1px solid #dddddd;
+}
+
+.ecam-crud .crud-list .crud-body .dataTables_scrollBody thead tr {
+  height: 0 !important;
+}
+
+.ecam-crud .crud-list .crud-body .dataTables_wrapper .dataTables_paginate .paginate_button {
+  padding: 0;
+  margin-left: 5px;
+  border: none;
+}
+
+.ecam-crud .crud-list .crud-body .dataTables_wrapper .dataTables_paginate .paginate_button.active {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  height: 100%;
+}
+
+.ecam-crud .crud-list .crud-body .dataTables_wrapper .dataTables_paginate .paginate_button.active:hover {
+  background: white !important;
+  border: none;
+}
+
+.ecam-crud .crud-list .crud-body .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  background: white !important;
+  border: none;
+}
+
+.ecam-crud .crud-list .crud-body .pagination-sm .page-link {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.7875rem;
+}
+
+/*-----Sidebar Filter-----*/
+
+.sidebar-filter {
+  position: fixed;
+  right: -280px;
+  top: 0px;
+  bottom: 0;
+  z-index: 1030;
+  width: 280px;
+  transition: all 0.2s ease-out;
+}
+
+.sidebar-filter.show {
+  right: 0;
+}
+
+.sidebar-filter .wrapper {
+  box-shadow: 0 0 15px 1px rgba(69, 65, 78, 0.2);
+}
+
+.sidebar-filter .wrapper .filter-header,
+.sidebar-filter .wrapper .filter-body {
+  padding: 0.5rem 1rem;
+}
+
+.sidebar-filter .wrapper .filter-header {
+  background: #2c3e50;
+  color: white;
+}
+
+.sidebar-filter .wrapper .filter-header .filter-title {
+  line-height: 37px;
+}
+
+.sidebar-filter .wrapper .filter-body .btn-group .btn {
+  color: white;
+}
+
+/*---Pagination---*/
+
+/*---- Preloading Loading ----*/
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1031;
+  background: #ffffff59;
+}
+
+#loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #9370DB;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+#loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #BA55D3;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+
+#loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #FF00FF;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*============ Customize Page Style ============*/
+
+/*============Login==========*/
+
+#login {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  /* Fallback for Edge
+  -------------------------------------------------- */
+  /* Fallback for IE
+  -------------------------------------------------- */
+}
+
+#login .branding .logo {
+  height: 90px;
+  width: 90px;
+  background-color: #fff;
+  border: solid 2px #fff;
+}
+
+#login .card-signin {
+  border: 0;
+  border-radius: 0.5rem;
+  border-top: solid #e3342f;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
+  max-width: 350px;
+}
+
+#login .card-signin .card-title {
+  margin-bottom: 2rem;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+#login .card-signin .card-body {
+  padding: 2rem;
+}
+
+#login .form-signin {
+  width: 100%;
+}
+
+#login .form-signin .btn {
+  border-radius: 5rem;
+  letter-spacing: 0.2rem;
+  padding: 0.7rem;
+  transition: all 0.2s;
+  background-color: #e3342f;
+  border-color: #e3342f;
+  opacity: 0.8;
+}
+
+#login .form-signin .btn:hover {
+  opacity: 1;
+}
+
+#login .form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+#login .form-label-group input {
+  height: auto;
+  border-radius: 2rem;
+  text-align: left;
+}
+
+#login .form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+
+#login .form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+
+#login .form-label-group input::placeholder {
+  color: transparent;
+}
+
+#login .form-label-group input:not(:-moz-placeholder-shown) ~ label {
+  color: #777;
+  display: none;
+}
+
+#login .form-label-group input:not(:-ms-input-placeholder) ~ label {
+  color: #777;
+  display: none;
+}
+
+#login .form-label-group input:not(:placeholder-shown) ~ label {
+  color: #777;
+  display: none;
+}
+
+#login .form-label-group input + div.error {
+  padding: 5px 5px 0;
+  text-align: left;
+  color: #e3342f;
+  opacity: 0.8;
+}
+
+#login .form-label-group > input,
+#login .form-label-group > label {
+  padding: var(--input-padding-y) var(--input-padding-x);
+}
+
+#login .form-label-group > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  /* Override default `<label>` margin */
+  line-height: 1.5;
+  color: #495057;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: all 0.1s ease-in-out;
+}
+
+@supports (-ms-ime-align: auto) {
+  #login .form-label-group > label {
+    display: none;
+  }
+
+  #login .form-label-group input::-ms-input-placeholder {
+    color: #777;
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #login .form-label-group > label {
+    display: none;
+  }
+
+  #login .form-label-group input:-ms-input-placeholder {
+    color: #777;
+  }
+}
+
+.dashboard .analysis {
+  padding-bottom: 1rem;
+}
+
+.dashboard .analysis .bg-stat-img {
+  background-color: #3490dc !important;
+}
+
+.dashboard .analysis .bg-stat-icon {
+  background: url(/images/bg-1.png?3b654f586364d65d9ca72c42663ac48d);
+  background-size: cover;
+}
+
+.dashboard .analysis .label-icon span {
+  display: block;
+}
+
+.dashboard .analysis .label-icon span.bg-rounded i {
+  font-size: 24px;
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+  color: #fff !important;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.23);
+  display: inline-block;
+}
+
+.dashboard .analysis .info .last {
+  height: 64px;
+  text-align: right;
+}
+
+.dashboard .analysis .info .last * {
+  display: block;
+}
+
+.dashboard .analysis .info .count-period {
+  font-size: 22px;
+}
+
+.dashboard .analysis .info .total-count {
+  display: block;
+  margin-left: auto;
+  text-align: right;
+}
+
+.profile .profile-img {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.profile .profile-img img {
+  width: 150px;
+  height: 150px;
+}
+
+.profile .button {
+  text-align: center;
+}
+
+.profile .button input {
+  width: 100px;
+}
+
+#permissions #permission-table .group-role .role {
+  color: #673AB7;
+  border: 1px solid var(--purple);
+  border-radius: 0.25rem !important;
+  padding: 3px 5px;
+  margin-right: 3px;
+}
+
+#permissions .ms-choice {
+  position: relative;
+  border: none;
+  height: 100%;
+}
+
+#permissions .ms-choice .span {
+  padding-left: 0;
+}
+
+#permissions .ms-drop {
+  margin-left: -12px;
+  overflow: auto;
+}
+

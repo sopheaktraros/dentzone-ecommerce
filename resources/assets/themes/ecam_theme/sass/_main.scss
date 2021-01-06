@@ -1,0 +1,30 @@
+/*==================== Main Page ====================*/
+
+main{
+
+    /*----Breadcrumbs & Tittle page---*/
+    .page-title-box{
+        max-height: 60px;
+        margin: 12px 0;
+    }
+    .breadcrumb{
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        .breadcrumb-item{
+            & + .breadcrumb-item {
+                &::before {
+                    color: rgba(52, 58, 64, 0.5);
+                    content: "\F105" !important;
+                    font-family: "Font Awesome 5 Pro";
+                    font-weight: 900;
+                    display: inline-block;
+                    padding-right: 0.5rem;
+                }
+            }
+        }
+        a{
+            padding: 0;
+        }
+    }
+}

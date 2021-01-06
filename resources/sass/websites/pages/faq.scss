@@ -1,0 +1,24 @@
+.faq{
+  .image{
+    z-index: -1;  
+    position: absolute;
+  }
+  .mb-3 .col-12 .title-path{
+    margin-left: 135px;
+  }
+  .card{
+    margin-top: 180px;
+  }
+  .bg-faded{
+    background-color:white;
+  }
+  .icon{
+    color: red;
+  } 
+  .fas {
+    transition: .2s transform ease-in-out;
+  }
+  .collapsed .fas {
+    transform: rotate(-90deg);
+  }
+}

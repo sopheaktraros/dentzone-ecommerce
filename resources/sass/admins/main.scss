@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/*********************************************************************************
+*    This is a main style  for admin that we import or add all file customize.   *
+**********************************************************************************/
+
+/*============== Font ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+/*============= Variable ============*/
+@import "variables";
+
+/*============ Default =============*/
+:root {
+    --input-padding-x: 1.5rem;
+    --input-padding-y: 0.5rem;
+}
+
+body {
+    background: $bg-primary;
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 1.2px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+a,a *{
+    text-decoration: none !important;
+}
+p{
+    margin: 0.2rem;
+}
+#app{
+    min-height: 100vh;
+}
+
+
+/*============ Customize Main Style ============*/
+@import "customize";
+@import "loading";
+
+/*============ Customize Page Style ============*/
+@import "login";
+@import "dashboard";
+@import "profile";
+@import "role";
+@import "permission";
+
+
+

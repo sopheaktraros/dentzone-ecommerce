@@ -1,0 +1,49 @@
+
+.dashboard{
+    .analysis{
+        padding-bottom: 1rem;
+        .bg-gradient{
+            //background: linear-gradient(45deg,#0288d1,#26c6da)!important;
+        }
+        .bg-stat-img{
+            background-color: #3490dc!important;
+        }
+        .bg-stat-icon{
+            background: url("../../images/background/bg-1.png");
+            background-size: cover;
+        }
+        .label-icon span {
+            display: block;
+            &.bg-rounded{
+                i{
+                    font-size: 24px;
+                    width: 64px;
+                    height: 64px;
+                    line-height: 64px;
+                    text-align: center;
+                    color: #fff!important;
+                    border-radius: 50%;
+                    background: rgb(0 0 0 / 23%);
+                    display: inline-block;
+                }
+            }
+        }
+        .info{
+            .last{
+                height: 64px;
+                text-align: right;
+                & *{
+                    display: block;
+                }
+            }
+            .count-period{
+                font-size: 22px;
+            }
+            .total-count{
+                display: block;
+                margin-left: auto;
+                text-align: right;
+            }
+        }
+    }
+}

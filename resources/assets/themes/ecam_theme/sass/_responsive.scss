@@ -1,0 +1,17 @@
+//Screen 1024
+@media (max-width: 1299px){
+    #header{
+
+    }
+}
+//Screen 992
+@media (max-width: 992px){
+    #header{
+        .navbar-brand{
+            .branding{
+                width: 100px;
+                display: block;
+            }
+        }
+    }
+}

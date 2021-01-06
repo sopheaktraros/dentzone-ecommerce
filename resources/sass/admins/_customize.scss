@@ -1,0 +1,226 @@
+/*----------Customer Background Color----------*/
+.bg-ecam-orange-light{
+    background: $ecam-bg-orang-light;
+}
+.bg-ecam-secondary{
+    background: $ecam-bg-secondary;
+}
+.bg-ecam-primary{
+    background: $ecam-bg-primary;
+}
+
+/*----------Customer Link----------*/
+a{
+    color: #112233;
+}
+
+a,.link,a.link{
+    text-decoration: none;
+}
+
+/*----------Breadcrumbs----------*/
+.breadcrumb{
+    .breadcrumb-item{
+        color: #3F51B5;
+    }
+}
+
+/*---------- Customer Bootstrap ----------*/
+
+/**-------Form------**/
+.form-group{
+    margin-bottom: 10px;
+    label{
+        color: black;
+        opacity: 0.8;
+        margin-bottom: 5px;
+    }
+    .form-control{
+        &:focus{
+            outline: none;
+            box-shadow: none;
+        }
+    }
+}
+/*--- validate ---*/
+.form-group label.error {
+    margin: .5rem 0 0;
+    width: 100%;
+    font-size: 0.875em;
+    color: #e3342f;
+    text-align: right;
+}
+.was-validated .form-check-input:valid ~ .form-check-label{
+    color:inherit;
+}
+
+/**-------Button------**/
+button:focus,a.btn{
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/**-------Text------**/
+.text-default{
+    color: #fff;
+    font-size: 15px;
+}
+
+/*------Padding------*/
+.padding-12{
+    padding: 12px;
+}
+
+/*--------Card--------*/
+.card-body{
+    padding: 15px;
+}
+
+/*----------CRUD----------*/
+.ecam-crud{
+    .card-crud{
+        border: 1px solid rgb(255 255 255);
+    }
+    &:not(.list){
+        padding-bottom: 60px;
+    }
+
+
+    /*------CRUD List-------*/
+    .crud-list{
+        .crud-header{
+            padding: 3px 16px;
+            crud-btn-group,.crud-tittle{
+                max-height: 38px;
+            }
+            .crud-tittle{
+                font-size: 1.2rem;
+                line-height: 38px;
+                margin: 0;
+            }
+            .crud-btn-group{
+                .btn{
+                    width: 70px;
+                    color: white;
+                }
+            }
+            .btn-add{
+                background: #0275d8;
+                border: #0275d8;
+                border-top-right-radius: 0.2rem;
+                border-bottom-right-radius: 0.2rem;
+            }
+            .btn-filter{
+                background: #2c3e50;
+                border-color: #2c3e50;
+                border-top-left-radius: 0.2rem;
+                border-bottom-left-radius: 0.2rem;
+            }
+        }
+        .crud-body{
+            /*-----Datatable------*/
+            .dataTables_processing{
+                border: none;
+                background: transparent;
+            }
+            .table{
+                &.dataTable{
+                    margin: 0px !important;
+                    thead th,  thead td {
+                        border: 1px solid #dddddd;
+                        border-left-width: 0px !important;
+                        color: #4c4949;
+                        font-family: serif;
+                        &:nth-child(1){
+                            border-left-width: 1px !important;
+                        }
+                    }
+                    tbody{
+                        th,td{
+                            font-size: 13px;
+                        }
+                    }
+                }
+                .btn-edit,.btn-delete{
+                    margin: 0 0.25rem;
+                }
+            }
+            .dataTables_scroll{
+                padding-top: 12px;
+            }
+            .dataTables_scrollBody{
+                border-bottom: 1px solid #dddddd;
+                thead{
+                    tr{
+                        height: 0 !important;
+                    }
+                }
+            }
+            .dataTables_wrapper .dataTables_paginate .paginate_button {
+                padding: 0;
+                margin-left: 5px;
+                border: none;
+                &.active{
+                    background: transparent;
+                    border: none;
+                    box-shadow: none;
+                    outline: none;
+                    height: 100%;
+                    &:hover{
+                        background: white !important;
+                        border: none;
+                    }
+                }
+                &:hover{
+                    background: white !important;
+                    border: none;
+                }
+            }
+            .pagination-sm .page-link {
+                padding: 0.25rem 0.75rem;
+                font-size: 0.7875rem;
+            }
+        }
+    }
+}
+
+/*-----Sidebar Filter-----*/
+.sidebar-filter{
+    position: fixed;
+    right: -280px;
+    top: 0px;
+    bottom: 0;
+    z-index: 1030;
+    width: 280px;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    &.show{
+        right: 0;
+    }
+    .wrapper{
+        box-shadow: 0 0 15px 1px rgba(69,65,78,.2);
+        .filter-header,.filter-body{
+            padding: 0.5rem 1rem;
+        }
+        .filter-header{
+            background: #2c3e50;
+            color: white;
+            .filter-title{
+                line-height: 37px;
+            }
+        }
+        .filter-body{
+            .btn-group{
+                .btn{
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+
+/*---Pagination---*/
+
+
+

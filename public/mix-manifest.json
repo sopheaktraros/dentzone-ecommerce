@@ -1,0 +1,22 @@
+{
+    "/assets/themes/ecam_theme/js/ecam.js": "/assets/themes/ecam_theme/js/ecam.js",
+    "/js/admins/main.js": "/js/admins/main.js",
+    "/js/admins/pages/dashboard.js": "/js/admins/pages/dashboard.js",
+    "/js/admins/pages/login.js": "/js/admins/pages/login.js",
+    "/js/admins/pages/navigations.js": "/js/admins/pages/navigations.js",
+    "/js/admins/pages/permission.js": "/js/admins/pages/permission.js",
+    "/js/admins/pages/role.js": "/js/admins/pages/role.js",
+    "/js/admins/pages/shop.js": "/js/admins/pages/shop.js",
+    "/js/admins/pages/user.js": "/js/admins/pages/user.js",
+    "/js/admins/vendor.js": "/js/admins/vendor.js",
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/assets/themes/ecam_theme/css/ecam.theme.css": "/assets/themes/ecam_theme/css/ecam.theme.css",
+    "/css/admins/vendor.css": "/css/admins/vendor.css",
+    "/css/admins/main.css": "/css/admins/main.css",
+    "/css/websites/theme.css": "/css/websites/theme.css",
+    "/css/websites/customize.css": "/css/websites/customize.css",
+    "/css/websites/pages/home.css": "/css/websites/pages/home.css",
+    "/css/websites/pages/category.css": "/css/websites/pages/category.css",
+    "/js/websites/vendor.js": "/js/websites/vendor.js"
+}

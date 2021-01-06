@@ -1,0 +1,90 @@
+/*======All Customize Style=====*/
+@import "../_variables.scss";
+@import "../websites/pages/about-us.scss";
+@import "../websites/pages/faq.scss";
+@import "../websites/pages/saves.scss";
+.form-control:focus{
+  border: none;
+  box-shadow:none;
+  background-color: #f3f3f3;
+}
+a.nav-link {
+  color: $black;
+}
+/*=============Master Style=================*/
+.container-fluid{
+  padding: 0;
+}
+.container {
+  max-width: 1920px;
+  width: 90%;
+}
+
+.style-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.container.w-95 {
+  width: 95%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.row.cus-p {
+  margin: 0 -7px;
+  .col-lg-2, .col-3.box-5 ,.col-lg-4,.col-lg-3 {
+    padding-right: 7px;
+    padding-left: 7px;
+  }
+
+  .col-3.box-5 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+a:hover{
+  text-decoration: none;
+}
+a{
+  color: $black;
+}
+.one-line{
+  -webkit-line-clamp: 1; /* number of lines to show */
+}
+.two-line{
+  -webkit-line-clamp: 2; /* number of lines to show */
+}
+.three-line{
+  -webkit-line-clamp: 3;
+}
+.one-line,.two-line,.three-line{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.breadcrumb{
+  background-color: white;
+}
+.row.has-sidebar{
+  .col-3{
+    flex: 1;
+    max-width:280px;
+    width: 280px;
+  }
+  .col-9{
+    flex: 1;
+    max-width: calc(100% - 280px);
+    width: calc(100% - 280px);
+  }
+}

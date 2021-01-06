@@ -1,0 +1,108 @@
+section.slide .carousel-item .caption {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+section.slide .carousel-item .caption h3.title {
+  position: relative;
+  left: 10%;
+  font-size: 60px;
+  font-weight: 600;
+  width: 65%;
+  padding-bottom: 30px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+section.slide .carousel-item .caption p.text-body {
+  width: 65%;
+  font-size: 18px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s ease-in-out;
+  position: relative;
+  bottom: 10%;
+}
+
+section.slide .carousel-item.active .caption h3.title {
+  opacity: 1;
+  visibility: visible;
+  left: 0;
+}
+
+section.slide .carousel-item.active .caption p.text-body {
+  opacity: 1;
+  visibility: visible;
+  bottom: 0;
+}
+
+section.news {
+  background-color: #FACD52;
+  padding: 0 10%;
+}
+
+section.news .btn a {
+  width: 200px;
+  padding: 10px;
+  color: #333;
+  border: 2px solid #333;
+}
+
+.procedure {
+  background-color: #f2f2f2;
+  display: inline-block;
+  width: 100%;
+  padding: 20px 0;
+}
+
+section.banner .img-banner {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+
+section.product-list .header-list {
+  width: 100%;
+}
+
+section.product-list .header-list ul#pills-tab li.nav-item {
+  width: 20%;
+  position: relative;
+}
+
+section.product-list .header-list ul#pills-tab li.nav-item a.nav-link {
+  text-align: center;
+  font-size: 16px;
+  padding: 15px 10px;
+}
+
+section.product-list .header-list .nav-pills .nav-link.active,
+section.product-list .header-list .nav-pills .show > .nav-link {
+  background-color: transparent;
+  color: #f01c12;
+  font-weight: 600;
+}
+
+section.product-list .header-list .nav-pills .nav-link.active:after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  background: red;
+}
+
+section.suppliers {
+  background-color: #f2f2f2;
+}
+
+section.suppliers .col-lg-2.box-7 {
+  flex: 0 0 14.28%;
+  max-width: 14.28%;
+}
+

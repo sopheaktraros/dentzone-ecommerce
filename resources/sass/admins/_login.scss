@@ -1,0 +1,130 @@
+
+/*============Login==========*/
+
+#login{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    .branding{
+        .logo{
+            height: 90px;
+            width: 90px;
+            background-color: #fff;
+            border: solid 2px #fff;
+        }
+    }
+    .card-signin {
+        border: 0;
+        border-radius: 0.5rem;
+        border-top: solid #e3342f;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
+        max-width: 350px;
+        .card-title {
+            margin-bottom: 2rem;
+            font-weight: 300;
+            font-size: 1.5rem;
+        }
+        .card-body {
+            padding: 2rem;
+        }
+
+    }
+    .form-signin {
+        width: 100%;
+        .btn {
+            border-radius: 5rem;
+            letter-spacing: 0.2rem;
+            padding: .7rem;
+            transition: all 0.2s;
+            background-color: #e3342f;
+            border-color: #e3342f;
+            opacity: 0.8;
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+    .form-label-group {
+        position: relative;
+        margin-bottom: 1rem;
+        input {
+            height: auto;
+            border-radius: 2rem;
+            text-align: left;
+            &::-webkit-input-placeholder {
+                color: transparent;
+            }
+            &:-ms-input-placeholder {
+                color: transparent;
+            }
+            &::-ms-input-placeholder {
+                color: transparent;
+            }
+            &::-moz-placeholder {
+                color: transparent;
+            }
+            &::placeholder {
+                color: transparent;
+            }
+            //&:not(:placeholder-shown) {
+            //    padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+            //    padding-bottom: calc(var(--input-padding-y) / 3);
+            //}
+            &:not(:placeholder-shown)~label {
+                //padding-top: calc(var(--input-padding-y) / 3);
+                //padding-bottom: calc(var(--input-padding-y) / 3);
+                color: #777;
+                display: none;
+            }
+            + div.error{
+                padding: 5px 5px 0;
+                text-align: left;
+                color: #e3342f;
+                opacity: 0.8;
+            }
+        }
+    }
+    .form-label-group>input,
+    .form-label-group>label {
+        padding: var(--input-padding-y) var(--input-padding-x);
+    }
+    .form-label-group>label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        margin-bottom: 0;
+        /* Override default `<label>` margin */
+        line-height: 1.5;
+        color: #495057;
+        border: 1px solid transparent;
+        border-radius: .25rem;
+        transition: all .1s ease-in-out;
+    }
+    /* Fallback for Edge
+-------------------------------------------------- */
+
+    @supports (-ms-ime-align: auto) {
+        .form-label-group>label {
+            display: none;
+        }
+        .form-label-group input::-ms-input-placeholder {
+            color: #777;
+        }
+    }
+
+    /* Fallback for IE
+    -------------------------------------------------- */
+
+    @media all and (-ms-high-contrast: none),
+    (-ms-high-contrast: active) {
+        .form-label-group>label {
+            display: none;
+        }
+        .form-label-group input:-ms-input-placeholder {
+            color: #777;
+        }
+    }
+}

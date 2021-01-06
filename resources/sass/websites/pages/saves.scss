@@ -1,0 +1,37 @@
+.saves{
+    width: 90%;
+    margin-bottom: 100px;
+
+    ul.nav.d-block, tbody, .fade{
+        background-color:#F5F5F5;
+        padding: 20px;
+    }
+    
+    a.nav-link{
+        color: #464749;
+        padding-top: 15px;
+    }
+    a.nav-link.active {
+        color: #E0007A;
+        border-radius: 10px;
+    }
+    a.nav-link.active::before {
+        content: "";
+        position: absolute;
+        width: 3px;
+        height: 40px;
+        background-color: #E0007A;
+        left: 0;
+    }
+    ul.nav.d-block{
+        position: relative;
+    }
+    .img{ 
+        width: 60px;
+        height: 60px;
+    }
+    .checkbox {
+        padding-top: 30px;
+    }
+    
+}

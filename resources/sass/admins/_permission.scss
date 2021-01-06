@@ -1,0 +1,26 @@
+#permissions{
+    #permission-table{
+        .group-role{
+            .role{
+                color: #673AB7;
+                border: 1px solid var(--purple);
+                border-radius: 0.25rem !important;
+                padding: 3px 5px;
+                margin-right: 3px;
+            }
+        }
+    }
+
+    .ms-choice{
+        position: relative;
+        border: none;
+        height: 100%;
+        .span{
+            padding-left:0;
+        }
+    }
+    .ms-drop{
+        margin-left: -12px;
+        overflow: auto;
+    }
+}

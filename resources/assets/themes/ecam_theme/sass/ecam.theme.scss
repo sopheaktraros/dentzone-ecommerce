@@ -1,0 +1,38 @@
+/*======================================================
+* Theme Name : Ecam Theme - E-commerce Camsolution Theme
+* Version : 1.0
+* Date : 08/08/2020
+* Author : Mr Try Chenhai
+* Email : chenhaitry@gamil.com
+* Description : Ecam is a theme who design for admin dashboard theme to use all project ecommerce website.
+* The theme have been allow to use on project under Camsolution Technology Company only.
+*=======================================================*/
+
+/*====================Content Section====================*/
+/*
+*   0.1. Plugin & Customize
+*   0.2. Sidebar
+*   0.3. Header
+*   0.4. Main Pages
+*   0.5. Footer
+*   0.6. Responsive
+*   0.7.Animation
+*/
+/*===================End Content Section================*/
+
+/*=======Plugin======*/
+
+/*=======Customize======*/
+@import "variables";
+@import "ecam";
+@import "skin";
+@import 'header';
+@import "sidebar";
+@import "main";
+@import "responsive";
+@import "animation";
+@import "customize";
+
+
+
+

@@ -1,0 +1,132 @@
+/*==================== Sidebar ====================*/
+.sidebar{
+    .logo{
+        display: block;
+        line-height: 70px;
+        width: 240px;
+        position: fixed;
+        top: 0;
+        -webkit-box-shadow: 0 -3px 31px 0 rgba(0,0,0,.05), 0 6px 20px 0 rgba(0,0,0,.02);
+        box-shadow: 0 -3px 31px 0 rgba(0,0,0,.05), 0 6px 20px 0 rgba(0,0,0,.02);
+        span{
+            display: block;
+            color: white;
+            font-size: 20px;
+        }
+        .logo-lg{
+            & img{
+                width: 45px;
+                height: 45px;
+            }
+        }
+    }
+    .vertical-menu {
+        position: relative;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -ms-flex-line-pack: start;
+        align-content: flex-start;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+
+        a,span{
+            color: inherit;
+        }
+
+        .wrapper-offset{
+            direction: inherit!important;
+            -webkit-box-sizing: inherit!important;
+            box-sizing: inherit!important;
+            resize: none!important;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            padding: 0;
+            margin: 0;
+            -webkit-overflow-scrolling: touch;
+        }
+        .wrapper-menu{
+            direction: inherit;
+            -webkit-box-sizing: border-box!important;
+            box-sizing: border-box!important;
+            position: relative;
+            display: block;
+            width: auto;
+            max-width: 100%;
+            max-height: 100%;
+            height: 100%;
+
+            .arrow-drop{
+                -webkit-transition: -webkit-transform .15s;
+                transition: -webkit-transform .15s;
+                transition: transform .15s;
+                transition: transform .15s,-webkit-transform .15s;
+                position: absolute;
+                right: 30px;
+                display: inline-block;
+                font-family: 'Material Design Icons';
+                text-rendering: auto;
+                line-height: 1.5rem;
+                -webkit-transform: translate(0,0);
+                transform: translate(0,0);
+                i{
+                    -webkit-transition: all .2s ease-out;
+                    transition: all .2s ease-out;
+                }
+            }
+            .collapsed{
+                span{
+                    &.arrow-drop{
+                        i {
+                            transform: rotate(90deg);
+                            -webkit-transform: rotate(90deg);
+                        }
+                    }
+                }
+            }
+
+            .scrollbar-track{
+                background: transparent;
+                width: 4px;
+            }
+            .scrollbar-thumb {
+                width: 4px;
+                background: rgb(158 158 158 / 53%);
+            }
+        }
+        .sidebar-menu{
+            &:after, &:before {
+                content: ' ';
+                display: table;
+            }
+        }
+        #nav-item{
+            padding-bottom: 12px;
+            .nav-item{
+                .nav-link{
+                    &.active{
+                        color: #dee2e6;
+                    }
+                    &:hover{
+                        &:not(.nav-tittle){
+                            color: #dee2e6;
+                        }
+                    }
+                    &.nav-tittle{
+                        cursor: default;
+                    }
+                }
+            }
+        }
+    }
+}

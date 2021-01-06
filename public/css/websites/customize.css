@@ -1,0 +1,193 @@
+/*======All Customize Style=====*/
+
+.text-vision {
+  margin-left: 40px;
+  margin-top: 30px;
+}
+
+.our-mission {
+  margin-top: 20%;
+}
+
+.vision-image {
+  margin-bottom: 20%;
+}
+
+.faq .image {
+  z-index: -1;
+  position: absolute;
+}
+
+.faq .mb-3 .col-12 .title-path {
+  margin-left: 135px;
+}
+
+.faq .card {
+  margin-top: 180px;
+}
+
+.faq .bg-faded {
+  background-color: white;
+}
+
+.faq .icon {
+  color: red;
+}
+
+.faq .fas {
+  transition: 0.2s transform ease-in-out;
+}
+
+.faq .collapsed .fas {
+  transform: rotate(-90deg);
+}
+
+.saves {
+  width: 90%;
+  margin-bottom: 100px;
+}
+
+.saves ul.nav.d-block,
+.saves tbody,
+.saves .fade {
+  background-color: #F5F5F5;
+  padding: 20px;
+}
+
+.saves a.nav-link {
+  color: #464749;
+  padding-top: 15px;
+}
+
+.saves a.nav-link.active {
+  color: #E0007A;
+  border-radius: 10px;
+}
+
+.saves a.nav-link.active::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 40px;
+  background-color: #E0007A;
+  left: 0;
+}
+
+.saves ul.nav.d-block {
+  position: relative;
+}
+
+.saves .img {
+  width: 60px;
+  height: 60px;
+}
+
+.saves .checkbox {
+  padding-top: 30px;
+}
+
+.form-control:focus {
+  border: none;
+  box-shadow: none;
+  background-color: #f3f3f3;
+}
+
+a.nav-link {
+  color: #333;
+}
+
+/*=============Master Style=================*/
+
+.container-fluid {
+  padding: 0;
+}
+
+.container {
+  max-width: 1920px;
+  width: 90%;
+}
+
+.style-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.container.w-95 {
+  width: 95%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.row.cus-p {
+  margin: 0 -7px;
+}
+
+.row.cus-p .col-lg-2,
+.row.cus-p .col-3.box-5,
+.row.cus-p .col-lg-4,
+.row.cus-p .col-lg-3 {
+  padding-right: 7px;
+  padding-left: 7px;
+}
+
+.row.cus-p .col-3.box-5 {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a {
+  color: #333;
+}
+
+.one-line {
+  -webkit-line-clamp: 1;
+  /* number of lines to show */
+}
+
+.two-line {
+  -webkit-line-clamp: 2;
+  /* number of lines to show */
+}
+
+.three-line {
+  -webkit-line-clamp: 3;
+}
+
+.one-line,
+.two-line,
+.three-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.breadcrumb {
+  background-color: white;
+}
+
+.row.has-sidebar .col-3 {
+  flex: 1;
+  max-width: 280px;
+  width: 280px;
+}
+
+.row.has-sidebar .col-9 {
+  flex: 1;
+  max-width: calc(100% - 280px);
+  width: calc(100% - 280px);
+}
+
